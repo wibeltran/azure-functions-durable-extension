@@ -255,6 +255,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.DurableTask.Tests
             HttpResponseMessage testHttpResponseMessage = CreateTestHttpResponseMessage(HttpStatusCode.OK);
             HttpMessageHandler httpMessageHandler = MockSynchronousHttpMessageHandler(testHttpResponseMessage);
 
+
             using (ITestHost host = TestHelpers.GetJobHost(
                 this.loggerProvider,
                 nameof(this.DurableHttpAsync_SynchronousAPI_Returns200),
